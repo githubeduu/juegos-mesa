@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3498db;
+    --primary-color: #FF575A; /* Color actualizado */
     --secondary-color: #2ecc71;
     --font-family: 'Arial', sans-serif;
     --header-bg-color: #ffffff; /* Color blanco para el header */
@@ -20,11 +20,13 @@ header {
     color: var(--header-text-color);
     text-align: center;
     padding: 1rem;
+    padding-top: 3.5rem; /* Ajustar para dejar espacio para el navbar fijo */
     position: relative;
+    box-sizing: border-box; /* Para incluir padding y border en la altura */
 }
 
 header img {
-    width: 50px; /* Tamaño del logo */
+    width: 70px; /* Tamaño del logo */
     height: auto;
     vertical-align: middle;
 }
@@ -46,6 +48,7 @@ footer {
 main {
     flex: 1;
     padding: 1rem;
+    margin-top: 80px; /* Ajustar para dejar espacio para el navbar fijo */
 }
 
 #categories ul {
@@ -139,7 +142,9 @@ header, footer, main {
     padding: 0.5rem 0;
     width: 100%;
     position: fixed;
+    top: 0;
     left: 0;
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
 }
 
 #navbar a {
@@ -154,4 +159,3 @@ header, footer, main {
 #navbar a:hover {
     background-color: var(--secondary-color);
 }
-
