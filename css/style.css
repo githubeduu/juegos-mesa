@@ -1,9 +1,8 @@
 :root {
-    --primary-color: #FF575A; /* Color actualizado */
     --secondary-color: #2ecc71;
     --font-family: 'Arial', sans-serif;
-    --header-bg-color: #ffffff; /* Color blanco para el header */
-    --header-text-color: #000000; /* Color negro para el texto en el header */
+    --header-bg-color: #f2f1e0;
+    --header-text-color: #000000; 
 }
 
 body {
@@ -19,36 +18,27 @@ header {
     background-color: var(--header-bg-color);
     color: var(--header-text-color);
     text-align: center;
-    padding: 1rem;
-    padding-top: 3.5rem; /* Ajustar para dejar espacio para el navbar fijo */
+    padding: 0.5rem 1rem;
     position: relative;
-    box-sizing: border-box; /* Para incluir padding y border en la altura */
-}
-
-header img {
-    width: 70px; /* Tamaño del logo */
-    height: auto;
-    vertical-align: middle;
-}
-
-header h1 {
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
-    font-size: 2.5rem; /* Tamaño del título */
+    box-sizing: border-box;
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--header-bg-color); /* Color del footer */
+    color: var(--header-text-color); /* Color del texto en el footer */
     text-align: center;
     padding: 1rem;
+}
+
+nav.navbar {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
 }
 
 main {
     flex: 1;
     padding: 1rem;
-    margin-top: 80px; /* Ajustar para dejar espacio para el navbar fijo */
+    margin-top: 80px; 
 }
 
 #categories ul {
@@ -120,6 +110,16 @@ article.game .price {
         width: 100%;
         height: auto;
     }
+
+    header img {
+        width: 70px; /* Tamaño del logo para pantallas pequeñas */
+    }
+}
+
+@media (min-width: 769px) {
+    header img {
+        width: 120px; /* Tamaño del logo para pantallas medianas y grandes */
+    }
 }
 
 @keyframes fadeIn {
@@ -133,29 +133,4 @@ article.game .price {
 
 header, footer, main {
     animation: fadeIn 1s ease-in-out;
-}
-
-#navbar {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 0.5rem 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
-}
-
-#navbar a {
-    text-decoration: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#navbar a:hover {
-    background-color: var(--secondary-color);
 }
