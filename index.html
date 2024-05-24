@@ -4,103 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nontendo - Juegos de Mesa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>       
 <body>
     <header>
-        <img src="imagenes/logo 1 nontendo.png" alt="Logo Nontendo">
-        <h1>Nontendo</h1>
-        <nav id="navbar">
-                <a id="categoryEstrategia" href="categoryEstrategia.html">         
-                <span>Juegos de Estrategia</span>
-            </a>
-            <a id="categoryFamiliar" href="categoryFamiliar.html">             
-                <span>Juegos de Familia</span>
-            </a>
-                <a id="categoryAventura" href="categoryAventura.html">                
-                <span>Juegos de Aventura</span>
-            </a>
-            </a>
-                <a id="categoryCooperativo" href="categoryCooperativo.html">                
-                <span>Juegos Cooperativo</span>
-            </a>
-        </nav>
-    </header>
-    <main>
-        <section id="categories">
-            <h2>Todos los productos:</h2>
-            <ul>
-                <li>
-                    <a id="categoryAventura" href="categoryAventura.html">
-                        <img src="imagenes/eldritch horror.webp" alt="Categoría 1">
-                     </a>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <img src="imagenes/logo.png" alt="Logo Nontendo">            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <li>
-                    <a id="categoryAventura" href="categoryAventura.html">
-                        <img src="imagenes/rescate.webp" alt="Categoría 1">
-                   </a>
-                </li> 
-                <li>
-                    <a id="categoryAventura" href="categoryAventura.html">
-                        <img src="imagenes/la isla prohibida.webp" alt="Categoría 1">
-                  </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Juegos de mesa
+                    </a>
+                    <ul class="dropdown-menu curved-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="categoryAventura.html">Aventura</a></li>
+                        <li><a class="dropdown-item" href="categoryCooperativo.html">Cooperativo</a></li>
+                        <li><a class="dropdown-item" href="categoryEstrategia.html">Estrategia</a></li>
+                        <li><a class="dropdown-item" href="categoryFamiliar.html">Familiar</a></li>
+                    </ul>                    
                 </li>
-            </ul>
-            <ul>
-                <li>
-                    <a id="categoryCooperativo" href="categoryCooperativo.html">
-                        <img src="imagenes/mysterium.webp" alt="Categoría 2">
-                     </a>
-                </li>
-                <li>
-                    <a id="categoryCooperativo" href="categoryCooperativo.html">
-                        <img src="imagenes/star wars.webp" alt="Categoría 2">
-                   </a>
-                </li> 
-                <li>
-                    <a id="categoryCooperativo" href="categoryCooperativo.html">
-                        <img src="imagenes/fast food fear.webp" alt="Categoría 2">
-                  </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="registroUsuario.html">Registro Usuario</a>
                 </li>
               </ul>
-              <ul>
-                <li>
-                    <a id="categoryEstrategia" href="categoryEstrategia.html">
-                        <img src="imagenes/catan.webp" alt="Categoría 2">
-                     </a>
-                </li>
-                <li>
-                    <a id="categoryEstrategia" href="categoryEstrategia.html">
-                        <img src="imagenes/senda.jpg" alt="Categoría 2">
-                   </a>
-                </li> 
-                <li>
-                    <a id="categoryEstrategia" href="categoryEstrategia.html">
-                        <img src="imagenes/orion.jpg" alt="Categoría 2">
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                    <a id="categoryFamiliar" href="categoryFamiliar.html">
-                        <img src="imagenes/aventureros.webp" alt="Categoría 2">
-                     </a>
-                </li>
-                <li>
-                    <a id="categoryFamiliar" href="categoryFamiliar.html">
-                        <img src="imagenes/Munchkin.webp" alt="Categoría 2">
-                   </a>
-                </li> 
-                <li>
-                    <a id="categoryFamiliar" href="categoryFamiliar.html">
-                        <img src="imagenes/bang.webp" alt="Categoría 2">
-                  </a>
-                </li>
-              </ul>
-        </section>
-    </main>
+            </div>
+        </nav>               
+      </header>   
+      <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/banner1.jpg" class="d-block mx-auto" alt="Splendor">                   
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/banner2.jpg" class="d-block mx-auto" alt="Cat in the box">                  
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/banner3.jpg" class="d-block mx-auto" alt="Carcassonne">                  
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </main>   
     <footer>
         <p>&copy; 2024 Nontendo</p>
-    </footer>
+    </footer>    
 </body>
 </html>

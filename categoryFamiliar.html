@@ -4,18 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos Familiares - Nontendo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>       
 <body>
-    <header>   
-        <h1>Juegos Familiares</h1>
-        <nav id="navbar">
-           </a>
-                <a href="index.html">                
-                <span>Inicio</span>
-           </a>        
-        </nav>
-    </header>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <img src="imagenes/logo.png" alt="Logo Nontendo">            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Juegos de mesa
+                    </a>
+                    <ul class="dropdown-menu curved-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="categoryAventura.html">Aventura</a></li>
+                        <li><a class="dropdown-item" href="categoryCooperativo.html">Cooperativo</a></li>
+                        <li><a class="dropdown-item" href="categoryEstrategia.html">Estrategia</a></li>
+                        <li><a class="dropdown-item" href="categoryFamiliar.html">Familiar</a></li>
+                    </ul>  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="registroUsuario.html">Registro Usuario</a>
+                </li>
+              </ul>
+            </div>
+        </nav>               
+      </header> 
     <main>
         <section id="games">
             <article class="game">
@@ -30,28 +54,24 @@
                 <p class="price">Precio: $45.990 <span>Descuento: Sí/No</span></p>
             </article> 
             <article class="game">
-                <img src="imagenes/Munchkin.webp" alt="Juego 2">
-                <h2>Munchkin</h2>
-                <p>DESCRIPCIÓN
-                    Mata a los monstruos. Roba el tesoro. Apuñala a tus amigos.
-                    Baja al Dungeon. Mata todo lo que encuentres. Apuñala a tus amigos y quédate con sus cosas. Toma el tesoro y corre. Admítelo. Te encanta.
-                    Este juego completo captura la esencia de la "Experiencia Dungeon" sin todas esas idioteces del rol. Todo lo que tienes que hacer es matar monstruos y coger objetos mágicos. 
-                    ¡Y qué objetos mágicos! Ponte el Yelmo Cornudo y las Botas de Invocación de Hemorroides. Blande el Báculo de Napalm o quizás la Motosierra de Mutilación Sangrienta. 
-                    Empieza masacrando a la Planta en un Tiesto y a la Babosa Babeante, y encuentra la manera de llegar al Dragón de Plutonio.
-                    Munchkin es rápido de jugar y ridículo, y puede llevar a cualquier grupo de jugadores de rol a la risa histérica. Y mientras se ríen, puedes robarles lo que lleven.
-                    Diseñado por Steve Jackson. Ilustrado por John Kovalic.</p>
-                <p class="price">Precio: $27.990 <span>Descuento: Sí/No</span></p>
+                <img src="imagenes/carcassonne-niebla-en-carcassonne.jpg" alt="Juego 2">
+                <h2>Carcassonne</h2>
+                <p>¿Listos para una aventura embrujada?...
+                    Prepárate para jugar en familia,  Niebla en Carcassonne te lleva a un universo fantástico donde deberán cooperar entre todos para detener la propagación de fantasmas y contener la niebla misteriosa. 
+                    Los castillos embrujados están a tu favor. Si son lo suficientemente valientes y logran sobrevivir 3 días aumenten el nivel de dificultad y enfrenten un nuevo reto.
+                    ¿Están listos para aceptar el desafío y dar descanso a las almas inquietas?
+                    NOTA: Niebla en Carcassonne es un juego totalmente independiente y, al mismo tiempo, compatible con el juego básico Carcassonne 2da Edición.</p>
+                <p class="price">Precio: $29.990 <span>Descuento: Sí/No</span></p>
             </article>
             <article class="game">
-                <img src="imagenes/bang.webp" alt="Juego 3">
-                <h2>Bang! (El Juego del Salvaje Oeste)</h2>
-                <p>DESCRIPCIÓN
-                    Una calle polvorienta. Una zarza rueda de un lado a otro. Dos hombres de pie, frente a frente. Uno de ellos va armado con una pistola. El otro le apunta con su Winchester.
-                    Todos miran con ansiedad al pistolero, pensando que ya está muerto, que no tiene nada que hacer ante el rifle... ¡pero lo que no saben es que su pistola es una Volcanic!
-                    En el Salvaje Oeste, los Forajidos dan caza al Sheriff, el Sheriff da caza a los Forajidos, y el Renegado urde su plan en secreto, listo para unirse a cualquiera de los bandos. 
-                    Dentro de poco, ¡las balas comenzarán a zumbar! 
-                    ¿Quiénes serán los Alguaciles, dispuestos a dar su vida por el Sheriff? ¿Quiénes serán los implacables Forajidos, que intentan acabar con él? El juego de cartas más famoso del Salvaje Oeste vuelve, en un formato mejorado, con nuevos componentes, ¡más fácil de aprender y jugar que nunca!</p>
-                <p class="price">Precio: $20.990 <span>Descuento: Sí/No</span></p>
+                <img src="imagenes/cat-in-the-box.jpg" alt="Juego 3">
+                <h2>Cat in the box</h2>
+                <p>¡Imagina un juego de cartas donde las reglas las escribes tú!
+                    Cat In The Box te lleva a un viaje lúdico donde cada carta es una puerta a lo impredecible. Este juego de cartas trae la emoción de lo desconocido a tu mesa, un juego familiar para los que aman los giros inesperados. 
+                    Aquí, el color de cada carta es un misterio que solo tú puedes resolver, desafiándote a pensar más allá, a jugar con la incertidumbre y a sacar el máximo partido de tu estrategia. Un juego de bazas donde los gatos cuánticos son los verdaderos protagonistas.                    
+                    Perfecto para mentes curiosas y almas aventureras.                    
+                    ¿Quieres vivir una experiencia de juego que trasciende lo ordinario? Atrévete a entrar en el mundo cuántico de Cat In The Box.</p>
+                <p class="price">Precio: $24.990 <span>Descuento: Sí/No</span></p>
             </article>        
         </section>
     </main>
