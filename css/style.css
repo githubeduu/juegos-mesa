@@ -101,6 +101,10 @@ article.game .price {
 }
 
 @media (max-width: 768px) {
+    .carousel-item img {
+        max-width: 100%;
+        height: auto;
+    }
     #categories ul {
         flex-direction: column;
         align-items: center;
@@ -112,13 +116,13 @@ article.game .price {
     }
 
     header img {
-        width: 70px; /* Tamaño del logo para pantallas pequeñas */
+        width: 100px; /* Tamaño del logo para pantallas pequeñas */
     }
 }
 
 @media (min-width: 769px) {
     header img {
-        width: 120px; /* Tamaño del logo para pantallas medianas y grandes */
+        width: 150px; /* Tamaño del logo para pantallas medianas y grandes */
     }
 }
 
@@ -133,4 +137,9 @@ article.game .price {
 
 header, footer, main {
     animation: fadeIn 1s ease-in-out;
+}
+
+.curved-dropdown {
+    border-radius: 10px;
+    overflow: hidden;
 }
